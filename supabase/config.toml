@@ -1,0 +1,21 @@
+[project]
+id = "YOUR_PROJECT_REF"
+name = "spot"
+
+[api]
+port = 54321
+
+[db]
+port = 54322
+
+[auth]
+site_url = "com.yourname.spot://"
+additional_redirect_urls = ["com.yourname.spot://login-callback"]
+
+[auth.external.apple]
+enabled = true
+
+[auth.external.google]
+enabled = true
+client_id = "YOUR_GOOGLE_CLIENT_ID"
+secret = "YOUR_GOOGLE_CLIENT_SECRET"
